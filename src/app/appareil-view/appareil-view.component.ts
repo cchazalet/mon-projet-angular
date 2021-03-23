@@ -10,6 +10,7 @@ export class AppareilViewComponent implements OnInit {
   @Input() appareilName: string;
   @Input() appareilStatus: string;
   @Input() indexOfAppareil: number;
+  @Input() id: number;
 
   isAuth = false;
   

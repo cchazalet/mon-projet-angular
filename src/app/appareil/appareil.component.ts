@@ -1,6 +1,4 @@
-import { getCurrencySymbol } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
-import { reduce } from 'rxjs-compat/operator/reduce';
 import { AppareilService } from '../services/appareil.service';
 
 @Component({
@@ -13,6 +11,7 @@ export class AppareilComponent implements OnInit {
   @Input() appareilName: string;
   @Input() appareilStatus: string;
   @Input() indexOfAppareil: number;
+  @Input() id: number;
 
   constructor(private appareilService: AppareilService) {
     
